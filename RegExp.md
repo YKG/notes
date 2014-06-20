@@ -7,7 +7,6 @@
 ### 一些例子：
 - 匹配不包含"abc"的行：
 
-
   ```javascript
 /^((?!abc).)*$/
 ```
@@ -16,13 +15,16 @@
 
 
 ## RegExp.lastIndex
+对于加上g修饰符的正则，每次匹配后会修改该正则的lastIndex域，记录该正则下一次匹配的起始位置。
+
 ```javascript
 r = /a/g;
 s = 'a';
 r.test(s); // true
 r.test(s); // false  # 如果r没有用g修饰，这里的结果是true
 ```
-[解释][3]
+### 参考：
+- [浅谈 js 正则之 test 方法][3]
 
 
 ## Catastrophic Backtracking
