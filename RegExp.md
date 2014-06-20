@@ -4,7 +4,7 @@
 - [Online regex tester and debugger: JavaScript, Python, PHP, and PCRE][6]
 
 ## 零宽度断言
-### 一些例子：
+### 一些例子
 - 匹配不包含"abc"的行（[解释][1]）：
 
   ```javascript
