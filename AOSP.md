@@ -56,6 +56,25 @@
   apt-get install libncurses5-dev
   ```
 
+- gperf 3.0
+
+  ```bash
+  apt-get install gperf
+  ```
+
+- gcc 4.4
+
+  ```bash
+  apt-get install gcc-4.4
+  update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.4 40
+  ```
+
+- g++ 4.4
+
+  ```bash
+  apt-get install g++-4.4
+  update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.4 40
+  ```
 
 
 ### make时遇到的问题
@@ -141,8 +160,25 @@
 
   方法同上。有点区别的地方是，这次是将等号右边强制类型转换为`(char *)`。
 
+- > make: *** [out/target/product/generic/obj/SHARED_LIBRARIES/libwebcore_intermediates/WebCore/HTMLNames.cpp] Error 255
+
+  降gcc/g++版本:
+
+  ```bash
+  apt-get install gcc-4.4
+  apt-get install g++-4.4
+  update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.4 40
+  update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.4 40
+  ```
+
+  [参考][5]
+
+
+
+
 
 [1]: http://blog.csdn.net/yiyaaixuexi/article/details/8330645
 [2]: http://blog.csdn.net/peter_hucq/article/details/6665237
 [3]: http://xxj050.appspot.com/?p=19001
 [4]: http://blog.csdn.net/milo103/article/details/5060085
+[5]: http://s90304a123.pixnet.net/blog/post/43192291-android%E7%B7%A8%E8%AD%AF%E9%8C%AF%E8%AA%A4%3Aunknown-parameter-a-interfacename-for-ta
