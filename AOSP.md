@@ -66,16 +66,14 @@
   ```Makefile
   LOCAL_CFLAGS += -Wno-format-y2k
   ```
-  
   改为
-  
   ```Makefile
   LOCAL_CFLAGS += -Wno-format-y2k -fpermissive
   ```
 
   [参考][1]
 
-- make: *** [out/host/linux-x86/obj/STATIC_LIBRARIES/libutils_intermediates/AssetManager.o] Error 1
+- > make: *** [out/host/linux-x86/obj/STATIC_LIBRARIES/libutils_intermediates/AssetManager.o] Error 1
   
   修改`frameworks/base/libs/utils/Android.mk`：
 
@@ -93,7 +91,7 @@
   [参考][1]
 
 
-- make: *** [out/host/linux-x86/obj/EXECUTABLES/grxmlcompile_intermediates/grxmlcompile.o] Error 1
+- > make: *** [out/host/linux-x86/obj/EXECUTABLES/grxmlcompile_intermediates/grxmlcompile.o] Error 1
 
   ```shell
   cd external/srec
@@ -106,7 +104,7 @@
   [参考][1]
 
 
-- make: *** [out/host/linux-x86/obj/EXECUTABLES/adb_intermediates/adb] Error 1
+- > make: *** [out/host/linux-x86/obj/EXECUTABLES/adb_intermediates/adb] Error 1
   
   ```shell
   apt-get install libncurses5-dev
@@ -114,7 +112,7 @@
 
   [参考][2]
 
-- make: *** [out/host/linux-x86/obj/EXECUTABLES/bb2sym_intermediates/trace_reader.o] Error 1
+- > make: *** [out/host/linux-x86/obj/EXECUTABLES/bb2sym_intermediates/trace_reader.o] Error 1
 
   修改`development/emulator/qtools/trace_reader.cpp`:
 
@@ -137,11 +135,9 @@
   [参考1][3]
   [参考2][4]
 
-- development/emulator/qtools/dmtrace.cpp:166:35: error: invalid conversion from ‘const char*’ to ‘char*’ [-fpermissive]
-
-  development/emulator/qtools/dmtrace.cpp:183:34: error: invalid conversion from ‘const char*’ to ‘char*’ [-fpermissive]
-  
-  make: *** [out/host/linux-x86/obj/EXECUTABLES/q2dm_intermediates/dmtrace.o] Error 1
+- > development/emulator/qtools/dmtrace.cpp:166:35: error: invalid conversion from ‘const char*’ to ‘char*’ [-fpermissive]
+  > development/emulator/qtools/dmtrace.cpp:183:34: error: invalid conversion from ‘const char*’ to ‘char*’ [-fpermissive]
+  > make: *** [out/host/linux-x86/obj/EXECUTABLES/q2dm_intermediates/dmtrace.o] Error 1
 
   方法同上。有点区别的地方是，这次是将等号右边强制类型转换为`(char *)`。
 
