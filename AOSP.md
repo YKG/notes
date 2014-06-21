@@ -59,7 +59,8 @@
 
 
 ### make时遇到的问题
-- make: *** [out/host/linux-x86/obj/EXECUTABLES/aapt_intermediates/AaptAssets.o] Error 1
+- > make: *** [out/host/linux-x86/obj/EXECUTABLES/aapt_intermediates/AaptAssets.o] Error 1
+  
   修改`frameworks/base/tools/aapt/Android.mk`：
 
   ```Makefile
@@ -75,6 +76,7 @@
   [参考][1]
 
 - make: *** [out/host/linux-x86/obj/STATIC_LIBRARIES/libutils_intermediates/AssetManager.o] Error 1
+  
   修改`frameworks/base/libs/utils/Android.mk`：
 
   ```Makefile
