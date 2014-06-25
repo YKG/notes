@@ -1,5 +1,11 @@
 # AOSP
 
+## 常识
+
+- Only a few devices are supported through AOSP though, only the two most recent Android development phones and tablets (part of the Nexus brand) and the pandaboard
+
+
+
 ## repo
 - 将工作区的源码切换到 android-1.6_r1.5:
   
