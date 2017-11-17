@@ -1,5 +1,15 @@
 # Linux
 
+### 用户管理
+
+- 添加用户
+
+  ```bash
+  sudo useradd ykg -m # -m is to create the home dir for this user
+  sudo passwd ykg
+  sudo adduser ykg sudo # add user to sudo group
+  ```
+
 ### 文件系统
 
 - `/usr` 目录
