@@ -159,13 +159,128 @@
 - 5. MySQL服务器管理
     
   - 5.1 服务器/The MySQL Server
+
+    - 5.1.1 配置MySQL服务器/Configuring the Server
+    - 5.1.2 默认配置/Server Configuration Defaults
+    - 5.1.3 服务器选项、系统变量、状态变量参考/Server Option, System Variable, and Status Variable Reference
+    - 5.1.4 系统变量参考/Server System Variable Reference
+    - 5.1.5 状态变量参考/Server Status Variable Reference
+    - 5.1.6 命令选项/Server Command Options
+    - 5.1.7 服务器系统变量/Server System Variables
+    - 5.1.8 使用系统变量/Using System Variables
+
+      - 5.1.8.1 系统变量权限/System Variable Privileges
+      - 5.1.8.2 动态系统变量/Dynamic System Variables
+      - 5.1.8.3 结构化系统变量/Structured System Variables
+
+    - 5.1.9 服务器状态变量/Server Status Variables
+    - 5.1.10 服务器SQL模式/Server SQL Modes
+    - 5.1.11 连接管理/Connection Management
+
+      - 5.1.11.1 连接接口/Connection Interfaces
+      - 5.1.11.2 DNS查询和主机缓存/DNS Lookups and the Host Cache
+
+    - 5.1.12 IPv6支持/IPv6 Support
+
+      - 5.1.12.1 确认系统是否支持IPv6/Verifying System Support for IPv6
+      - 5.1.12.2 配置MySQL服务器允许IPv6连接/Configuring the MySQL Server to Permit IPv6 Connections
+      - 5.1.12.3 使用IPv6本机地址连接/Connecting Using the IPv6 Local Host Address
+      - 5.1.12.4 使用IPv6非本地地址连接/Connecting Using IPv6 Nonlocal Host Addresses
+      - 5.1.12.5 从Broker处获取IPv6地址/Obtaining an IPv6 Address from a Broker
+
+    - 5.1.13 时区支持/MySQL Server Time Zone Support
+    - 5.1.14 服务端帮助支持/Server-Side Help Support
+    - 5.1.15 服务端跟踪客户端会话状态变更/Server Tracking of Client Session State Changes
+    - 5.1.16 服务端关闭流程/The Server Shutdown Process
+
   - 5.2 数据目录/The MySQL Data Directory
   - 5.3 `mysql`系统数据库/The mysql System Database
   - 5.4 服务器日志/MySQL Server Logs
+
+    - 5.4.1 查询一般查询日志和慢查询日志输出位置/Selecting General Query Log and Slow Query Log Output Destinations
+    - 5.4.2 错误日志/The Error Log
+
+      - 5.4.2.1 Error Logging on Windows
+      - 5.4.2.2 Error Logging on Unix and Unix-Like Systems
+      - 5.4.2.3 日志输出到系统日志/Error Logging to the System Log
+      - 5.4.2.4 错误日志过滤/Error Log Filtering
+      - 5.4.2.5 错误日志输出格式/Error Log Output Format
+      - 5.4.2.6 错误日志刷盘和重命名/Error Log File Flushing and Renaming
+
+    - 5.4.3 一般查询日志/The General Query Log
+    - 5.4.4 二进制日志/The Binary Log
+
+      - 5.4.4.1 二进制日志格式/Binary Logging Formats
+      - 5.4.4.2 二进制日志格式设置/Setting The Binary Log Format
+      - 5.4.4.3 混合二进制日志格式/Mixed Binary Logging Format
+      - 5.4.4.4 `mysql`数据库中的表的变更日志格式/Logging Format for Changes to `mysql` Database Tables
+
+    - 5.4.5 慢查询日志/The Slow Query Log
+    - 5.4.6 DDL日志/The DDL Log
+    - 5.4.7 服务端日志维护/Server Log Maintenance
+
   - 5.5 服务器插件/MySQL Server Plugins
-  - 5.6 服务器用户自定义函数/MySQL Server User-Defined Functions
+
+    - 5.5.1 安装与卸载/Installing and Uninstalling Plugins
+    - 5.5.2 获取服务器插件信息/Obtaining Server Plugin Information
+    - 5.5.3 MySQL Enterprise Thread Pool
+
+      - 5.5.3.1 Thread Pool Elements
+      - 5.5.3.2 Thread Pool Installation
+      - 5.5.3.3 Thread Pool Operation
+      - 5.5.3.4 Thread Pool Tuning
+
+    - 5.5.4 查询重写插件/The Rewriter Query Rewrite Plugin
+
+      - 5.5.4.1 安装与卸载/Installing or Uninstalling the Rewriter Query Rewrite Plugin
+      - 5.5.4.2 使用/Using the Rewriter Query Rewrite Plugin
+      - 5.5.4.3 参考/Rewriter Query Rewrite Plugin Reference
+
+    - 5.5.5 Version Tokens
+
+      - 5.5.5.1 Version Tokens Elements
+      - 5.5.5.2 Installing or Uninstalling Version Tokens
+      - 5.5.5.3 Using Version Tokens
+      - 5.5.5.4 Version Tokens Reference
+
+    - 5.5.6 MySQL Plugin Services
+
+      - 5.5.6.1 The Locking Service
+      - 5.5.6.2 The Keyring Service
+
+  - 5.6 服务器用户定义函数/MySQL Server User-Defined Functions
+
+    - 5.6.1 安装与卸载/Installing and Uninstalling User-Defined Functions
+    - 5.6.2 获取用户定义函数信息/Obtaining User-Defined Function Information
+
   - 5.7 单机多实例/Running Multiple MySQL Instances on One Machine
+
+    - 5.7.1 设置多个数据目录/Setting Up Multiple Data Directories
+    - 5.7.2 Running Multiple MySQL Instances on Windows
+
+      - 5.7.2.1 Starting Multiple MySQL Instances at the Windows Command Line
+      - 5.7.2.2 Starting Multiple MySQL Instances as Windows Services
+
+    - 5.7.3 在Unix环境下运行多实例/Running Multiple MySQL Instances on Unix
+    - 5.7.4 在多实例下使用客户端程序/Using Client Programs in a Multiple-Server Environment
+
   - 5.8 调试/Debugging MySQL
+
+    - 5.8.1 调试MySQL服务器/Debugging a MySQL Server
+
+      - 5.8.1.1 编译调试版MySQL/Compiling MySQL for Debugging
+      - 5.8.1.2 创建跟踪文件/Creating Trace Files
+      - 5.8.1.3 Using WER with PDB to create a Windows crashdump
+      - 5.8.1.4 gdb下调试mysqld/Debugging mysqld under gdb
+      - 5.8.1.5 使用Stack Trace/Using a Stack Trace
+      - 5.8.1.6 利用服务器日志寻找mysqld错误原因/Using Server Logs to Find Causes of Errors in mysqld
+      - 5.8.1.7 表损坏时创建一个测试用例/Making a Test Case If You Experience Table Corruption
+
+    - 5.8.2 调试MySQL客户端/Debugging a MySQL Client
+    - 5.8.3 DBUG包/The DBUG Package
+    - 5.8.4 使用DTrace跟踪mysqld/Tracing mysqld Using DTrace
+
+      - 5.8.4.1 mysqld DTrace探针参考/mysqld DTrace Probe Reference
 
 - 6. 安全
     
