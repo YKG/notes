@@ -8,6 +8,13 @@
 - 在查找Windows如何为主机启用IP Forwarding时，找到了这个文档: [TCP/IP Fundamentals for Microsoft Windows][1].
   帮助我发现的[链接][2]，另一个指导[链接][3]
 
+### 输入法
+
+- 设置简繁体、禁用Ctrl + Shift + F快捷键切换
+
+  > 开始 -- 设置 -- 时间和语言 -- 语言 -- 首选语言 -- 选项 -- 键盘 -- 微软拼音选项 -- 常规 -- 选择字符集 -- 简体中文
+  > 
+  > 开始 -- 设置 -- 时间和语言 -- 语言 -- 首选语言 -- 选项 -- 键盘 -- 微软拼音选项 -- 按键 -- 热键 -- 关
 
 [1]: doc/TCPIP_Fund.pdf
 [2]: https://social.technet.microsoft.com/Forums/windows/en-US/35b00eb7-aa2d-4543-8774-b618da27b6cd/attempting-to-configure-ip-routing-on-windows-7-pro-question?forum=w7itpronetworking
