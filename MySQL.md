@@ -2,20 +2,20 @@
 
 ## MySQL 5.7 官方文档笔记
 
-### 目录
+## 前言与法律声明
+## 1. General Information
 
-- 前言与法律声明
-- 1. General Information
-    - 1.1 About This Manual
-    - 1.2 Overview of the MySQL Database Management System
-    - 1.3 What Is New in MySQL 5.7
-    - 1.4 Server and Status Variables and Options Added, Deprecated, or Removed in MySQL 5.7
-    - 1.5 MySQL Information Sources
-    - 1.6 How to Report Bugs or Problems
-    - 1.7 MySQL Standards Compliance
-    - 1.8 Credits
+  - 1.1 About This Manual
+  - 1.2 Overview of the MySQL Database Management System
+  - 1.3 What Is New in MySQL 5.7
+  - 1.4 Server and Status Variables and Options Added, Deprecated, or Removed in MySQL 5.7
+  - 1.5 MySQL Information Sources
+  - 1.6 How to Report Bugs or Problems
+  - 1.7 MySQL Standards Compliance
+  - 1.8 Credits
 
-- 2. 安装与升级
+## 2. 安装与升级
+
   - 2.1 General Installation Guidance
   - 2.2 Installing MySQL on Unix/Linux Using Generic Binaries
   - 2.3 Installing MySQL on Microsoft Windows
@@ -30,7 +30,7 @@
   - 2.12 Downgrading MySQL
   - 2.13 Perl Installation Notes
 
-- 3. 教程
+## 3. 教程
 
   - 3.1 连接与断开服务器/Connecting to and Disconnecting from the Server
   - 3.2 输入查询/Entering Queries
@@ -57,7 +57,7 @@
 
   - 3.7 MySQL与Apache结合/Using MySQL with Apache
 
-- 4. MySQL程序
+## 4. MySQL程序
     
   - 4.1 概览/Overview of MySQL Programs
   - 4.2 使用MySQL程序/Using MySQL Programs
@@ -156,7 +156,7 @@
   - 4.9 环境变量/Environment Variables
   - 4.10 Unix信号处理/Unix Signal Handling in MySQL
 
-- 5. MySQL服务器管理
+## 5. MySQL服务器管理
     
   - 5.1 服务器/The MySQL Server
 
@@ -282,7 +282,7 @@
 
       - 5.8.4.1 mysqld DTrace探针参考/mysqld DTrace Probe Reference
 
-- 6. 安全
+## 6. 安全
     
   - 6.1 一般安全问题/General Security Issues
   - 6.2 访问控制与账号管理/Access Control and Account Management
@@ -292,7 +292,7 @@
   - 6.6 MySQL Enterprise Encryption
   - 6.7 SELinux
 
-- 7. 备份与恢复
+## 7. 备份与恢复
     
   - 7.1 备份与恢复类型/Backup and Recovery Types
   - 7.2 备份方法/Database Backup Methods
@@ -301,7 +301,7 @@
   - 7.5 增量恢复/Point-in-Time (Incremental) Recovery
   - 7.6 MyISAM表维护与灾难恢复/MyISAM Table Maintenance and Crash Recovery
 
-- 8. 优化
+## 8. 优化
 
   - 8.1 优化概览/Optimization Overview
   - 8.2 优化SQL语句/Optimizing SQL Statements
@@ -318,7 +318,7 @@
   - 8.13 性能测量/Measuring Performance (Benchmarking)
   - 8.14 检查服务器线程信息/Examining Server Thread (Process) Information
 
-- 9. 语言结构
+## 9. 语言结构
 
   - 9.1 字面值/Literal Values
   - 9.2 Schema对象名/Schema Object Names
@@ -327,7 +327,7 @@
   - 9.5 表达式/Expressions
   - 9.6 备注/Comments
 
-- 10. 字符集、校对、Unicode
+## 10. 字符集、校对、Unicode
 
   - 10.1 常规字符集和校对/Character Sets and Collations in General
   - 10.2 MySQL中的字符集和校对/Character Sets and Collations in MySQL
@@ -346,7 +346,7 @@
   - 10.15 字符集配置/Character Set Configuration
   - 10.16 MySQL服务器区域设定支持/MySQL Server Locale Support
 
-- 11. 数据类型
+## 11. 数据类型
 
   - 11.1 数值类型/Numeric Data Types
   - 11.2 日期与时间/Date and Time Data Types
@@ -358,7 +358,7 @@
   - 11.8 为列选择合适的数据类型/Choosing the Right Type for a Column
   - 11.9 使用其他数据库引擎的数据类型/Using Data Types from Other Database Engines
 
-- 12. 函数与运算符
+## 12. 函数与运算符
 
   - 12.1 SQL函数与运算符参考/SQL Function and Operator Reference
   - 12.2 用户定义函数参考/User-Defined Function Reference
@@ -383,7 +383,7 @@
   - 12.21 其他函数/Miscellaneous Functions
   - 12.22 Precision Math
 
-- 13. SQL语句
+## 13. SQL语句
 
   - 13.1 数据定义语句/Data Definition Statements
   - 13.2 数据操作语句/Data Manipulation Statements
@@ -394,7 +394,7 @@
   - 13.7 数据库管理语句/Database Administration Statements
   - 13.8 Utility Statements
 
-- 14. InnoDB存储引擎
+## 14. InnoDB存储引擎
 
   - 14.1 InnoDB介绍/Introduction to InnoDB
   - 14.2 InnoDB与ACID模型/InnoDB and the ACID Model
@@ -421,7 +421,7 @@
   - 14.23 InnoDB Limits
   - 14.24 InnoDB Restrictions and Limitations
 
-- 15. 可选存储引擎
+## 15. 可选存储引擎
 
   - 15.1 设置存储引擎/Setting the Storage Engine
   - 15.2 The MyISAM Storage Engine
@@ -435,14 +435,14 @@
   - 15.10 其他存储引擎/Other Storage Engines
   - 15.11 MySQL存储引擎架构概览/Overview of MySQL Storage Engine Architecture
 
-- 16. 复制（Replication）
+## 16. 复制（Replication）
 
   - 16.1 配置/Configuring Replication
   - 16.2 实现/Replication Implementation
   - 16.3 解决方案/Replication Solutions
   - 16.4 注意事项/Replication Notes and Tips
 
-- 17. 组复制（Group Replication）
+## 17. 组复制（Group Replication）
 
   - 17.1 背景/Group Replication Background
   - 17.2 Getting Started
@@ -454,16 +454,16 @@
   - 17.8 常见问题/Frequently Asked Questions
   - 17.9 技术细节/Group Replication Technical Details
 
-- 18. MySQL Shell
+## 18. MySQL Shell
 
-- 19. 将MySQL作为文档存储
+## 19. 将MySQL作为文档存储
 
   - 19.1 关键概念/Key Concepts
   - 19.2 将MySQL设置为文档存储/Setting Up MySQL as a Document Store
   - 19.3 MySQL for Visual Studio快速指南/Quick-Start Guide: MySQL for Visual Studio
   - 19.4 X Plugin
 
-- 20. MySQL NDB Cluster 7.5 and NDB Cluster 7.6
+## 20. MySQL NDB Cluster 7.5 and NDB Cluster 7.6
 
   - 20.1 NDB Cluster Overview
   - 20.2 NDB Cluster Installation
@@ -473,7 +473,7 @@
   - 20.6 NDB Cluster Replication
   - 20.7 NDB Cluster Release Notes
 
-- 21. 分区（Partitioning）
+## 21. 分区（Partitioning）
 
   - 21.1 MySQL分区概览/Overview of Partitioning in MySQL
   - 21.2 分区类型/Partitioning Types
@@ -482,7 +482,7 @@
   - 21.5 Partition Selection
   - 21.6 分区限制/Restrictions and Limitations on Partitioning
 
-- 22. 存储对象（Stored Objects）
+## 22. 存储对象（Stored Objects）
 
   - 22.1 定义存储程序/Defining Stored Programs
   - 22.2 使用存储过程/Using Stored Routines
@@ -494,7 +494,7 @@
   - 22.8 存储程序限制/Restrictions on Stored Programs
   - 22.9 视图限制/Restrictions on Views
 
-- 23. INFORMATION_SCHEMA 表
+## 23. INFORMATION_SCHEMA 表
 
   - 23.1 简介/Introduction
   - 23.2 The INFORMATION_SCHEMA CHARACTER_SETS Table
@@ -533,7 +533,7 @@
   - 23.35 INFORMATION_SCHEMA MySQL Enterprise Firewall Tables
   - 23.36 Show语句扩展/Extensions to SHOW Statements
 
-- 24. MySQL Performance Schema
+## 24. MySQL Performance Schema
 
   - 24.1 快速入门/Performance Schema Quick Start
   - 24.2 构建配置/Performance Schema Build Configuration
@@ -557,14 +557,14 @@
   - 24.20 Migrating to Performance Schema System and Status Variable Tables
   - 24.21 限制/Restrictions on Performance Schema
 
-- 25. MySQL sys Schema
+## 25. MySQL sys Schema
 
   - 25.1 使用sys要求/Prerequisites for Using the sys Schema
   - 25.2 使用`sys` schema/Using the sys Schema
   - 25.3 进度报告/sys Schema Progress Reporting
   - 25.4 `sys`对象参考/sys Schema Object Reference
 
-- 26. Connectors and APIs
+## 26. Connectors and APIs
 
   - 26.1 MySQL Connector/C++
   - 26.2 MySQL Connector/J
@@ -580,7 +580,7 @@
   - 26.12 MySQL Tcl API
   - 26.13 MySQL Eiffel Wrapper
 
-- 27. MySQL Enterprise Edition
+## 27. MySQL Enterprise Edition
 
   - 27.1 MySQL Enterprise Monitor Overview
   - 27.2 MySQL Enterprise Backup Overview
@@ -591,8 +591,12 @@
   - 27.7 MySQL Enterprise Thread Pool Overview
   - 27.8 MySQL Enterprise Data Masking and De-Identification Overview
 
-- Chapter 28 MySQL Workbench
-- Appendix A MySQL 5.7 Frequently Asked Questions
-- Appendix B Error Messages and Common Problems
-- Appendix C Indexes
-- MySQL Glossary
+## Chapter 28 MySQL Workbench
+
+## Appendix A MySQL 5.7 Frequently Asked Questions
+
+## Appendix B Error Messages and Common Problems
+
+## Appendix C Indexes
+
+## MySQL Glossary
