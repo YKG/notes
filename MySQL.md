@@ -35,21 +35,124 @@
   - 3.1 连接与断开服务器/Connecting to and Disconnecting from the Server
   - 3.2 输入查询/Entering Queries
   - 3.3 创建和使用一个数据库/Creating and Using a Database
+
+    - 3.3.1 创建和选择数据库/Creating and Selecting a Database
+    - 3.3.2 创建表/Creating a Table
+    - 3.3.3 加载数据到表/Loading Data into a Table
+    - 3.3.4 从表中提取信息/Retrieving Information from a Table
+
   - 3.4 获取数据库或表的信息/Getting Information About Databases and Tables
   - 3.5 批处理模式/Using mysql in Batch Mode
   - 3.6 常用查询示例/Examples of Common Queries
+
+    - 3.6.1 列的最大值/The Maximum Value for a Column
+    - 3.6.2 包含指定列最大值的行/The Row Holding the Maximum of a Certain Column
+    - 3.6.3 每组列的最大值/Maximum of Column per Group
+    - 3.6.4 每一组包含指定列最大值的行/The Rows Holding the Group-wise Maximum of a Certain Column
+    - 3.6.5 使用用户定义变量/Using User-Defined Variables
+    - 3.6.6 使用外键/Using Foreign Keys
+    - 3.6.7 搜索两个关键词/Searching on Two Keys
+    - 3.6.8 计算每天访问数/Calculating Visits Per Day
+    - 3.6.9 使用AUTO_INCREMENT/Using AUTO_INCREMENT
+
   - 3.7 MySQL与Apache结合/Using MySQL with Apache
 
 - 4. MySQL程序
     
   - 4.1 概览/Overview of MySQL Programs
   - 4.2 使用MySQL程序/Using MySQL Programs
+
+    - 4.2.1 调用MySQL程序/Invoking MySQL Programs
+    - 4.2.2 指定程序选项/Specifying Program Options
+
+      - 4.2.2.1 命令行参数/Using Options on the Command Line
+      - 4.2.2.2 使用配置文件/Using Option Files
+      - 4.2.2.3 影响配置文件处理的命令行参数/Command-Line Options that Affect Option-File Handling
+      - 4.2.2.4 参数修饰符/Program Option Modifiers
+      - 4.2.2.5 使用参数来设置程序变量/Using Options to Set Program Variables
+      - 4.2.2.6 参数默认值、期望值和`=`/Option Defaults, Options Expecting Values, and the = Sign
+
+    - 4.2.3 连接服务器命令参数/Command Options for Connecting to the Server
+    - 4.2.4 使用命令参数连接服务器/Connecting to the MySQL Server Using Command Options
+    - 4.2.5 连接传输层协议/Connection Transport Protocols
+    - 4.2.6 连接压缩控制/Connection Compression Control
+    - 4.2.7 设置环境变量/Setting Environment Variables
+
   - 4.3 Server和Server启动程序/Server and Server-Startup Programs
+
+    - 4.3.1 服务器/mysqld — The MySQL Server
+    - 4.3.2 mysqld_safe — MySQL Server Startup Script
+    - 4.3.3 mysql.server — MySQL Server Startup Script
+    - 4.3.4 mysqld_multi — Manage Multiple MySQL Servers
+
   - 4.4 MySQL安装相关程序/Installation-Related Programs
+
+    - 4.4.1 编译MySQL错误消息文件/comp_err — Compile MySQL Error Message File
+    - 4.4.2 舒适化MySQL数据目录/mysql_install_db — Initialize MySQL Data Directory
+    - 4.4.3 配置插件/mysql_plugin — Configure MySQL Server Plugins
+    - 4.4.4 增强MySQL安装安全性/mysql_secure_installation — Improve MySQL Installation Security
+    - 4.4.5 创建SSL/RSA文件/mysql_ssl_rsa_setup — Create SSL/RSA Files
+    - 4.4.6 加载时区表/mysql_tzinfo_to_sql — Load the Time Zone Tables
+    - 4.4.7 检查更新MySQL表/mysql_upgrade — Check and Upgrade MySQL Tables
+
   - 4.5 客户端/Client Programs
+
+    - 4.5.1 命令行客户端/mysql — The MySQL Command-Line Client
+
+      - 4.5.1.1 客户端参数/mysql Client Options
+      - 4.5.1.2 客户端命令/mysql Client Commands
+      - 4.5.1.3 客户端日志/mysql Client Logging
+      - 4.5.1.4 客户端的服务端帮助/mysql Client Server-Side Help
+      - 4.5.1.5 执行文本文件中的SQL语句/Executing SQL Statements from a Text File
+      - 4.5.1.6 客户端注意事项/mysql Client Tips
+
+    - 4.5.2 服务器管理程序/mysqladmin — A MySQL Server Administration Program
+    - 4.5.3 表维护程序/mysqlcheck — A Table Maintenance Program
+    - 4.5.4 数据库备份程序/mysqldump — A Database Backup Program
+    - 4.5.5 数据导入程序/mysqlimport — A Data Import Program
+    - 4.5.6 数据库备份程序/mysqlpump — A Database Backup Program
+    - 4.5.7 显示数据库、表、列信息/mysqlshow — Display Database, Table, and Column Information
+    - 4.5.8 负载仿真客户端/mysqlslap — A Load Emulation Client
+
   - 4.6 管理与实用工具/Administrative and Utility Programs
+
+    - 4.6.1 离线InnoDB文件校验实用工具/innochecksum — Offline InnoDB File Checksum Utility
+    - 4.6.2 显示选文索引信息/myisam_ftdump — Display Full-Text Index information
+    - 4.6.3 MyISAM表维护工具/myisamchk — MyISAM Table-Maintenance Utility
+
+      - 4.6.3.1 常规选项/myisamchk General Options
+      - 4.6.3.2 检查选项/myisamchk Check Options
+      - 4.6.3.3 修复选项/myisamchk Repair Options
+      - 4.6.3.4 其他选项/Other myisamchk Options
+      - 4.6.3.5 获取表信息/Obtaining Table Information with myisamchk
+      - 4.6.3.6 内存使用/myisamchk Memory Usage
+
+    - 4.6.4 显示MyISAM日志文件内容/myisamlog — Display MyISAM Log File Contents
+    - 4.6.5 生成压缩只读MyISAM表/myisampack — Generate Compressed, Read-Only MyISAM Tables
+    - 4.6.6 MySQL配置实用工具/mysql_config_editor — MySQL Configuration Utility
+    - 4.6.7 二进制日志文件处理实用工具/mysqlbinlog — Utility for Processing Binary Log Files
+
+      - 4.6.7.1 十六进制格式/mysqlbinlog Hex Dump Format
+      - 4.6.7.2 行事件显示/mysqlbinlog Row Event Display
+      - 4.6.7.3 备份二进制日志文件/Using mysqlbinlog to Back Up Binary Log Files
+      - 4.6.7.4 指定Server ID/Specifying the mysqlbinlog Server ID
+
+    - 4.6.8 慢日志文件总结/mysqldumpslow — Summarize Slow Query Log Files
+
   - 4.7 程序开发实用工具/Program Development Utilities
+
+    - 4.7.1 显示编译的客户端选项/mysql_config — Display Options for Compiling Clients
+    - 4.7.2 显示配置文件选项/my_print_defaults — Display Options from Option Files
+    - 4.7.3 将StackTrace的值解析为符号/resolve_stack_dump — Resolve Numeric Stack Trace Dump to Symbols
+
   - 4.8 其他程序/Miscellaneous Programs
+
+    - 4.8.1 解压mysqldump的lz4压缩包/lz4_decompress — Decompress mysqlpump LZ4-Compressed Output
+    - 4.8.2 显示MySQL错误消息信息/perror — Display MySQL Error Message Information
+    - 4.8.3 字符串替换/replace — A String-Replacement Utility
+    - 4.8.4 主机名和IP解析互转/resolveip — Resolve Host name to IP Address or Vice Versa
+    - 4.8.5 解压mysqldump的zlib压缩包/zlib_decompress — Decompress mysqlpump ZLIB-Compressed Output
+
   - 4.9 环境变量/Environment Variables
   - 4.10 Unix信号处理/Unix Signal Handling in MySQL
 
